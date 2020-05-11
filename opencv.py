@@ -17,6 +17,6 @@ image = cv2.imread('programming.jpg',cv2.IMREAD_GRAYSCALE)
 cv2.imshow('Image' , image)
 
 # litarly waiting for any button to be presed
-cv2.waitkey(0)
+cv2.waitKey(0)
 
 cv2.destroyAllWindows()
