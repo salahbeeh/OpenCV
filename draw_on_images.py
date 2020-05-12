@@ -12,6 +12,9 @@ cv2.line(image,(5,5),(60,60),(255,255,255),5)
 # cv2.rectangle(image,highest lift point ,lowest right point,rectangle_color, rectangle width)
 cv2.rectangle(image,(100,100) ,(350,350),(0,255,0), 5)
 
+# drawing a circle
+# cv2.circle(image , center, ridus,circle_color, width{if it -1 it will fill the circle})
+cv2.circle(image, (200,200), 30, (255,0,0),3)
 
 
 cv2.imshow('image',image)
