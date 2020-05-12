@@ -17,6 +17,14 @@ cv2.rectangle(image,(100,100) ,(350,350),(0,255,0), 5)
 cv2.circle(image, (200,200), 30, (255,0,0),3)
 
 
+# polygones consist of points and you gonna connect those dots
+# you have the option to colse the polygone
+# the points for the polygone
+points = np.array([[50,45],[60,47],[69,78],[39,85],[82,64]],np.int32)
+points = points.reshape((-1,1,2))
+#cv2.polylines(image, [points],wither or not to connect the first point to  the last one, color, line width)
+cv2.polylines(image,[points],True,(0,255,255),6)
+
 cv2.imshow('image',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
