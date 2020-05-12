@@ -25,6 +25,12 @@ points = points.reshape((-1,1,2))
 #cv2.polylines(image, [points],wither or not to connect the first point to  the last one, color, line width)
 cv2.polylines(image,[points],True,(0,255,255),6)
 
+# writing on the image
+# define a font
+font = cv2.FONT_HERSHEY_SIMPLEX
+#                            start,font, size,color, space between charcters, alusing 
+cv2.putText(image,'oh! shit',(0,130),font, 1, (100,220,150), 2,cv2.LINE_AA)
+
 cv2.imshow('image',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
