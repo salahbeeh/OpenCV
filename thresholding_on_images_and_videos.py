@@ -15,6 +15,16 @@ retval, threshold2 = cv.threshold(grayscale , 12, 255, cv.THRESH_BINARY)
 cv.imshow('grayscaled', threshold2)
 
 
+# adaptive threshold
+# there's 2 types of adaptive threshold (mean,gaussian)
+# cv.AdaptiveThreshold(src, dst, maxValue, adaptive_method=CV_ADAPTIVE_THRESH_MEAN_C, thresholdType=CV_THRESH_BINARY, blockSize=3, param1)
+mean_adaptive = cv.adaptiveThreshold(grayscale,255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, 115, 1)
+cv.imshow('mean_adaptive',mean_adaptive)
+
+gaussian_adaptive = cv.adaptiveThreshold(grayscale,255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 115, 1)
+cv.imshow('gaussian_adaptive',gaussian_adaptive)
+
+
 
 cv.waitKey(0)
 cv.destroyAllWindows()
