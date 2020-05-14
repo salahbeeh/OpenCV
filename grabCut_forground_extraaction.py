@@ -7,7 +7,7 @@ mask = np.zeros(img.shape[:2],np.uint8)
 
 bgdModel = np.zeros((1,65),np.float64)
 fgdModel = np.zeros((1,65),np.float64)
-
+# rect = It is the coordinates of a rectangle which includes the foreground object in the format (x,y,w,h)
 rect = (450,50,450,900)
 
 cv2.grabCut(img,mask,rect,bgdModel,fgdModel,5,cv2.GC_INIT_WITH_RECT)
