@@ -11,10 +11,11 @@ import matplotlib as plt
  """
 
 # reading a randam image from my labtop using opencv
-image = cv2.imread('programming.jpg',cv2.IMREAD_GRAYSCALE)
+image = cv2.imread('samples/programming.jpg',cv2.IMREAD_GRAYSCALE)
 
 # showing the image i just read
 cv2.imshow('Image' , image)
+cv2.imwrite('samples/programming-gray.jpg',image)
 
 # litarly waiting for any button to be presed
 cv2.waitKey(0)
