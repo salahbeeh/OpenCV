@@ -36,26 +36,28 @@ This is the most basic operation to be done by **OpenCV** using images or videos
 
 let's see an example :
 
-        import cv2
+```python
+import cv2
 
-        # careful with the identions
+# careful with the identions
 
-        """
-        # reading an image can be done in opencv with many ways:
-        # IMREAD_GRAYSCALE , we can basicly just replace it with 0
-        # IMREAD_COLOR , or just replace it with 1
-         """
+"""
+# reading an image can be done in opencv with many ways:
+# IMREAD_GRAYSCALE , we can basicly just replace it with 0
+# IMREAD_COLOR , or just replace it with 1
+ """
 
-        # reading a randam image from my labtop using opencv
-        image = cv2.imread('programming.jpg',cv2.IMREAD_GRAYSCALE)
+# reading a randam image from my labtop using opencv
+image = cv2.imread('programming.jpg',cv2.IMREAD_GRAYSCALE)
 
-        # showing the image i just read
-        cv2.imshow('Image' , image)
+# showing the image i just read
+cv2.imshow('Image' , image)
 
-        # litarly waiting for any button to be presed
-        cv2.waitKey(0)
+# litarly waiting for any button to be presed
+cv2.waitKey(0)
 
-        cv2.destroyAllWindows()
+cv2.destroyAllWindows()
+```
 
 First, we import OpenCV module and to read an image we use cv2.imread(image path , alpha channel), this function simply takes the path of the image which you wanna load, and in the second prameter we pass an alpha channel we wanna apply on the image, by  default is going to be IMREAD_COLOR, which is color without any alpha channel, there are some other channels like IMREAD_GRAYSCALE for example.
 
@@ -73,13 +75,13 @@ and the output for the former code will be like:
 You don't need to write something like IMREAD_GRAYSCALE at each time you wanna convert the image using a spacific alpha channel, insted you can can also use simple numbers. You should be familiar with both options, so you understand what the person is doing. For the second parameter, you can use -1, 0, or 1. Color is 1, grayscale is 0, and the unchanged is -1.
 
 let's try it with an example:
-
-        image = cv2.imread('programming.jpg',0)
-
+```python
+image = cv2.imread('programming.jpg',0)
+```
 and it should give the same output as the pervious one.
 
 the comming part is (optional), if you want to save the image you just converted from BGR (in OpenCV it's called BGR insted of RGB but they are the same) to grayscale we can write the next line of code.
-
-        cv2.imwrite('programming-gray.jpg',image)
-
+```python
+cv2.imwrite('programming-gray.jpg',image)
+```
 easy enough!
