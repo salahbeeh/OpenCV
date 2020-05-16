@@ -63,7 +63,7 @@ Once loaded, we use cv2.imshow(title,image) to show the image. From here, we use
 
 Here is the image we loaded
 
-![input](https://raw.githubusercontent.com/salahbeeh/OpenCV/master/samples/programming.jpg?token=AK65GLNS2M26MS45JMS22LK6YBFG6)
+![input](https://github.com/salahbeeh/OpenCV/blob/master/samples/programming.jpg?raw=true)
 
 and the output for the former code will be like:
 
