@@ -67,7 +67,7 @@ Here is the image we loaded
 
 and the output for the former code will be like:
 
-![output](https://raw.githubusercontent.com/salahbeeh/OpenCV/master/samples/programming-gray.jpg?token=AK65GLJ7DV5LXRPE4TO2TLC6YBFAA)
+![output](https://github.com/salahbeeh/OpenCV/blob/master/samples/programming-gray.jpg?raw=true)
 
 
 You don't need to write something like IMREAD_GRAYSCALE at each time you wanna convert the image using a spacific alpha channel, insted you can can also use simple numbers. You should be familiar with both options, so you understand what the person is doing. For the second parameter, you can use -1, 0, or 1. Color is 1, grayscale is 0, and the unchanged is -1.
